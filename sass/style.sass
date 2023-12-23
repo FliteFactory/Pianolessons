@@ -1,0 +1,313 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+$light-beige: #F8F8EF
+$dark: #212121
+$brown: #3F1400
+
+@font-face
+    font-family: "Mulish"
+    src: url('../fonts/Mulish-Regular.ttf')
+    font-weight: 400
+
+@font-face
+    font-family: "Mulish"
+    src: url('../fonts/Mulish-Medium.ttf')
+    font-weight: 500
+
+@font-face
+    font-family: "Mulish"
+    src: url('../fonts/Mulish-SemiBold.ttf')
+    font-weight: 600
+
+@font-face
+    font-family: "Mulish"
+    src: url('../fonts/Mulish-Bold.ttf')
+    font-weight: 700
+
+@font-face
+    font-family: "Mulish"
+    src: url('../fonts/Mulish-ExtraBold.ttf')
+    font-weight: 800
+
+@font-face
+    font-family: "PlayfairDisplay"
+    src: url('../fonts/PlayfairDisplay-Regular.ttf')
+    font-weight: 400
+    font-style: normal
+
+@font-face
+    font-family: "PlayfairDisplay"
+    src: url('../fonts/PlayfairDisplay-Medium.ttf')
+    font-weight: 500
+    font-style: normal
+
+@font-face
+    font-family: "PlayfairDisplay"
+    src: url('../fonts/PlayfairDisplay-MediumItalic.ttf')
+    font-weight: 500
+    font-style: italic
+
+*
+    box-sizing: border-box
+
+html
+    font-family: 'Mulish'
+
+.container
+    width: 1140px
+    margin: 0 auto
+
+.first-section
+    min-height: 800px
+    background: $light-beige
+    padding-top: 17px
+    position: relative
+    &__nav-container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 67px
+        margin-bottom: 61px
+    &__content-container
+        display: flex
+    &__notes-circle
+        position: absolute
+        right: 0px
+        bottom: -74px
+
+.logo
+    display: flex
+    justify-content: space-between
+    width: 179px
+    &__text
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: space-between
+        color: rgba(63, 20, 0, 0.90)
+    &__text-1
+        font-size: 32px
+        letter-spacing: 8.5px
+        font-weight: 800
+        line-height: 0.8
+    &__text-2
+        font-size: 20px
+        letter-spacing: 6.4px
+        font-weight: 800
+        line-height: 0.8
+        margin-right: 5px
+
+.nav-menu
+    &__list
+        display: flex
+    &__item
+        margin-right: 84px
+        a
+            color: rgba(63, 20, 0, 0.90)
+            text-decoration: none
+            font-size: 18px
+            font-weight: 700
+        &:last-child
+            margin-right: 36px
+
+.left-wrapper
+    width: 700px
+
+.right-wrapper
+    width: 393px
+    &__title
+        position: relative
+        padding-top: 20px
+        background: linear-gradient(180deg, rgba(63, 20, 0, 0.95) 0%, rgba(63, 20, 0, 0.6) 70%, rgba(63, 20, 0, 0.85) 100%)
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        color: rgba(63, 20, 0, 0.83)
+        font-size: 74px
+        font-weight: 500
+        text-align: right
+        letter-spacing: 17px
+        line-height: 78%
+        margin-bottom: 20px
+        span
+            letter-spacing: 11.5px
+    &__img-key
+        position: absolute
+        left: 6px
+        top: -6px
+    &__text
+        width: 372px
+        font-size: 16px
+        font-weight: 600
+        text-align: justify
+        color: $brown
+        line-height: 1.15
+        padding-left: 5px
+        margin-bottom: 37px
+    &__icons-soc
+        margin-left: 28px
+
+.buttons
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 35px
+    &__order
+        width: 165px
+        height: 45px
+        background-color: $dark
+        border: none
+        box-shadow: 0 0 0 2px #fff, 0 0 0 4px $dark, 0 4px 4px 4px rgba(0,0,0,0.25)
+        color: #fff
+        font-size: 19px
+        font-weight: 900
+        margin-left: 9px
+    &__ask
+        width: 173px
+        height: 53px
+        background-color: #fff
+        border: 2px solid #000
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25)
+        color: #1E1E1E
+        font-size: 19px
+        font-weight: 900
+        margin-right: 16px
+
+.icons-soc
+    width: 290px
+    position: relative
+    &__text
+        font-family: 'PlayfairDisplay'
+        font-style: italic
+        font-size: 26px
+        color: $brown
+        text-align: center
+        transform: rotate(-4.91deg)
+        padding-left: 40px
+    &__icon
+        position: absolute
+    &__icon-skype
+        bottom: 21px
+        left: 19px
+    &__icon-vk
+        bottom: 33px
+        left: 94px
+    &__icon-tg
+        bottom: 39px
+        left: 170px
+    &__icon-inst
+        bottom: 49px
+        left: 248px
+
+.second-section
+    min-height: 800px
+    background-color: $dark
+    padding-top: 46px
+    &__title
+        margin-bottom: 60px
+    &__cards
+        display: flex
+        justify-content: space-between
+    &__achiev-icons
+        display: flex
+        justify-content: space-between
+
+
+.title
+    font-size: 72px
+    font-weight: 600
+    color: $light-beige
+    position: relative
+    &__hr
+        border: none
+        border-top: 1px solid $light-beige
+        width: 88px
+        margin: 0
+        position: absolute
+        left: 5px
+        bottom: -13px
+
+.card
+    width: 360px
+    height: 384px
+    border-radius: 10px
+    background-color: #E1DDD4
+    display: flex
+    align-items: flex-end
+    flex-direction: column
+    justify-content: flex-end
+    padding-top: 23px
+    position: relative
+    margin-bottom: 61px
+    &_dark
+        padding-bottom: 42px
+        background-color: #000
+    &__img-1
+        width: 360px
+    &__text
+        font-family: "PlayfairDisplay"
+        font-weight: 500
+        font-size: 34px
+        align-self: center
+        letter-spacing: 1.5px
+        position: absolute
+        top: 23px
+        &_light
+            color: $light-beige
+            font-weight: 400
+
+.achiev-icon
+    display: flex
+    &__img
+        margin-right: 14px
+    &__text
+        font-weight: 400
+        font-size: 24px
+        color: rgba(248, 248, 239, 0.80)
+        letter-spacing: 1.1px
+        span
+            font-weight: 700
+            font-size: 40px
+            line-height: 36px
+
+.footer
+    min-height: 425px
+    background-color: $light-beige
+    position: relative
+    padding-top: 60px
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+    &__notes-img
+        position: absolute
+        left: 0px
+        top: 0px
+    &__piano-img
+        position: absolute
+        left: 0px
+        top: 178px
+    &__wrapper
+        width: 571px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+    &__title
+        font-size: 74px
+        font-weight: 500
+        letter-spacing: 4.5px
+        background: linear-gradient(180deg, rgba(63, 20, 0, 0.93) 0%, rgba(63, 20, 0, 0.67) 100%)
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        align-self: felx-end
+        margin-bottom: 33px
+        hr
+            border-top: 1px solid #502917
+            width: 89px
+            left: 3px
+            bottom: 73px
+    &__icons-soc
+        margin-right: 157px
+
